@@ -1,16 +1,55 @@
 @charset "UTF-8";
 @namespace d url(http://www.apple.com/DTDs/DictionaryService-1.0.rng);
 
-d|entry {
+body {
+    padding-top: .5em;
+    margin-bottom: -4em;
 }
 
-div.def, h1 {
+.def {
     font-family: "Heiti SC";
-    font-weight: normal;
+    height: auto;
+    padding-bottom: 1.5em;
+    float: left;
 }
 
-h1 {
-	font-size: 150%;
+.def h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+    padding-right: .5em;
+    float: left;
+}
+span.syntax {
+    float: left;
+    font-family: "Heiti SC";
+    height: auto;
+    padding-bottom: 1.5em;
+    float: left;
+    padding-top: .4em;
+    font-size: 1.1em;
+    color: #808080;
+}
+.def span:before {
+    content: '|';
+}
+.def span:after {
+    content: '|';
+    clear: both;
+}
+ol {
+    clear: both;
+    list-style-position: outside;
+    padding: 0;
+    margin: 0;
+    padding-left: 2.5em;
+    margin-bottom: 5em;
+}
+li {
+    padding: 0;
+    margin: 0;
+    padding-left: .5em;
 }
 
 h3	{

@@ -19,7 +19,7 @@ var wre = function(no, ws, dict, cb) {
     it.indexes.forEach(function(index) {
         ws.write('  <d:index d:value="' + index.replace('"', '\\"') + '"/>\n');
     });
-    ws.write('  <div d:priority="2"><h1>' + it.name + '</h1></div><span class="syntax"><span d:pr="tp">' +
+    ws.write('  <div class="def"><h1>' + it.name + '</h1></div><span class="syntax"><span d:pr="tp">' +
                 it.pronunciation + '</span></span>\n');
     ws.write('  <div><ol>\n');
     it.definitions.forEach(function(def) {
