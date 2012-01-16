@@ -4,7 +4,12 @@
 d|entry {
 }
 
-h1	{
+div.def, h1 {
+    font-family: "Heiti SC";
+    font-weight: normal;
+}
+
+h1 {
 	font-size: 150%;
 }
 

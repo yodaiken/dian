@@ -17,7 +17,7 @@ var wre = function(no, ws, dict, cb) {
 
     ws.write('<d:entry id="ls_' + id + '" d:title="' + it.name + '">\n');
     it.indexes.forEach(function(index) {
-        ws.write('  <d:index d:value="' + index + '"/>\n');
+        ws.write('  <d:index d:value="' + index.replace('"', '\\"') + '"/>\n');
     });
     ws.write('  <div d:priority="2"><h1>' + it.name + '</h1></div><span class="syntax"><span d:pr="tp">' +
                 it.pronunciation + '</span></span>\n');
